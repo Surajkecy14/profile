@@ -1,167 +1,179 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-nav{
-    background-color: rgb(17, 0, 255);
-    height: 70px;
-    font-size: 1.3rem;
-    border: 5px solid rgb(3, 163, 255);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    display: flex;
-    align-items: center;
-    animation: border 10s  0s infinite;
-    width: 100%;
-    position: fixed;
-}
-ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: 50px;
-}
-nav li{
-    border-left: 3px solid #92ff03;
-    border-right: 3px solid #92ff03;
-    border-radius: 0% 60% 0% 60%;
-    padding: 5px;
 
+html {
+    scroll-behavior: smooth;
+     
 }
-nav a{
-    padding: 5px;
-    color: white;
+
+header ul li a {
     text-decoration: none;
-   
-}
-nav a:hover{
-    border-top: 3px solid #03e2ff;
-    border-bottom: 3px solid #16dcff;
-    border-radius: 60% 0% 60% 0%;
-}
-nav a:active{
-    color: blue;
-    background-color: white;
-}
-body{
-    background-color: rgb(100, 237, 255);
-}
-#main:hover nav a[href="index.html"]{
-    border-top: 3px solid #03e2ff;
-    border-bottom: 3px solid #16dcff;
-    border-radius: 60% 0% 60% 0%;
-}
-#about:hover nav a[href="about.html"]{
-    border-top: 3px solid #03e2ff;
-    border-bottom: 3px solid #16dcff;
-    border-radius: 60% 0% 60% 0%;
+    color: aqua;
 }
 
-@keyframes border {
-    0%{
-        border: 5px solid rgb(3, 163, 255);
-    }
-    25%{
-        border: 5px solid rgb(187, 25, 52);
-    }
-    50%{
-        border: 5px solid rgb(33, 19, 228);
-    }
-    75%{
-        border: 5px solid rgb(0, 146, 243);
-    }
-    100%{
-        border: 5px solid rgb(186, 253, 2);
-    }
+header ul li a:hover {
+    color: skyblue;
 }
-#intro h1{
-    color: rgb(91, 2, 255);
-    font-family: Arial, Helvetica, sans-serif;
+html,body{
+    height: 100%;
+    margin: 0;
 }
-#intro{
-    padding-top: 100px;
-    text-align: center;
+body {
+    background-image: url(moon.jpg);
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header ul li {
+    display: inline;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header {
     font-size: 2rem;
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(4, 4, 13);   
+}
+
+header ul li a i {
+    color: rgb(200, 255, 1);
+    padding: 5px;
+}
+#home{
+    display: flex;
+    height: 100vh;
     
 }
-#developer{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.8rem;
-    color: rgb(116, 0, 248); ;
+
+#left {
+    
+    color: rgb(229, 254, 0);
+    font-size: 30px;
+    padding-left: 200px;
+    padding-top: 30px;
+    height: fit-content;
 }
-#intro img{
-    width: 30%;
-    height: 300px;
-    border: 3px solid blueviolet;
-    animation: border 30s  0s infinite;
-    border-radius: 40%;
+
+#right {
+    text-align: center;
+    
+    font-size: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    color: rgb(219, 219, 219);
+    padding-left: 100px;
+    height: fit-content;
 }
-#thanks{
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   background-color: #171724;
-   color: #81cf1a;
-   position: fixed;
-   bottom: 0px;
-   width: 100%;
-   border: 5px solid black;
-   animation: border 10s  0s infinite;
+#intro{
+        margin-top: 20px; /* Space between the content and the paragraph */
+        text-align: center; /* Align the paragraph in the center */
+        font-size: 1.2rem;
+        color: #fff;
 }
-#background{
-    padding-top: 100px;
+section {
+    padding: 100px 20px;
+    height: 100vh;
+    scroll-margin-top: 10px;
 }
-#about{
-    background-color: #058b9c;
+
+h1 {
+    color: rgb(255, 255, 49);
+    text-align: center;
+    font-size: large;
+    font-size: 30px;
+
 }
-#aboutme{
-    align-items: center;
+#homes{
+    display: flex;
+    flex-direction: column;
+
+}
+#intro{
+    color: rgb(132, 0, 255);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#socialMedia p {
+    color: rgb(0, 136, 255);
+    font-size: 2rem;
+}
+#socialMedia a{
+    text-decoration: none;
+    border: 1px solid rgb(0, 183, 255);
+    font-size: 30px;
+    margin: 20px;
+    color: blanchedalmond;
+    padding: 8px;
+    text-align: center;
+    border-radius: 50%;
+}
+#link{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+#socialMedia a:first-child{
+    background-color: blue;
+}
+#socialMedia a:nth-child(2){
+       background-color: rgb(204, 0, 255);
+}
+#socialMedia a:nth-child(3){
+    background-color: rgb(20, 116, 20);
+}
+#socialMedia a:nth-child(4){
+    background-color: rgb(0, 132, 255);
+}
+#journey p{
+    color: rgb(237, 89, 89);
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+#twm p{
+    color: rgb(60, 246, 246);
+    font-size: 40px;text-align: center;
     display: flex;
     justify-content: center;
-    background-color: #00ffbf;
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 2rem;
-    color: blue;
+    align-items: center;
+
 }
-#edu1{
-    background-color: rgb(208, 255, 0);
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: larger;
-    color: rgb(0, 0, 0);
-    text-align: center;
-   
+#scan{
+    background-image: url("Text_here.png");
+    height: 400px;
+    width: 400px;
+    background-size: cover; 
+    margin-left: 450px;
 }
-#edu2{
-    background-color: rgb(255, 217, 0);
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: larger;
-    color: rgb(65, 18, 18);
-    text-align: center;
-}
-#goal{
-    background-color: rgb(255, 187, 0);
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: larger;
-    color: rgb(10, 10, 5);
-    text-align: center;
-}
-#values{
-    background-color: rgba(255, 217, 0, 0.829);
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: larger;
-    color: rgb(10, 10, 5);
-    text-align: center;
-}
-#codeing{
-    background-color: rgba(255, 9, 1, 0.829);
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 3rem;
-    color: rgb(4, 0, 245);
-    text-align: center;
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    *{
+        font-size: 10px;
+    }
+
 }
